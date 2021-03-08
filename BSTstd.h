@@ -36,12 +36,13 @@ public:
 	void inorder();
 	/* traverse the tree  */
 	/* traverse the tree preorder */
-	//void preorder();
+
+	
 	/* traverse the tree postorder */
-	//void postorder();
+	
 	void traversal();
 	/* Search for an element in the binary search tree */
-    //bool search(ElementType element);
+    bool search(ElementType element);
 
 private:
 	TreeNode* root;
@@ -50,8 +51,8 @@ private:
 	int findmax(TreeNode* p);
 	int findmin(TreeNode* p);
 	void inorder(TreeNode* p);
-	//void preorder(TreeNode* p);
-	//void postorder(TreeNode* p);
+	void preorder(TreeNode* p);
+	void postorder(TreeNode* p);
 
 };
 #endif

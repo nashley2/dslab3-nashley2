@@ -181,11 +181,36 @@ void BSTstd::inorder(TreeNode* p)
 
 }
 
+void BSTstd::preorder(TreeNode* p)
+{
+	
+		if (p != NULL)
+		{
+			cout << p->data << " ";
+			preorder(p->left);
+			preorder(p->right);
+		}
+	
+}
+
+void BSTstd::postorder(TreeNode* p)
+{
+	
+	if (p != NULL)
+	{
+		postorder(p->left);
+		postorder(p->right);
+		cout << p->data << " ";
+	}
+
+}
+
 /* Traverse the tree inorder */
 void BSTstd::inorder()
 {
 	inorder(root);
 }
+
 
 /* Display output of various traversal methods */
 void BSTstd::traversal()
@@ -199,6 +224,22 @@ void BSTstd::traversal()
 
 }
 
+bool BSTstd::search(ElementType element)
+{
+	
+	if (root == NULL)
+		return NULL;
+	// The given key is found
+	else if (root->data == element)
+		return root;
+	// The given is greater than
+	// current node's key
+	
+	
+}
+	
+
 /* Traverse the tree preorder */
+
 /* Traverse the tree posorder */
 /* Search for an element in the binary search tree */
